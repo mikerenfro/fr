@@ -43,13 +43,9 @@ function lunr_search(term) {
     document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
     if(term) {
         document.getElementById('lunrsearchresults').innerHTML = "<p>Search results for '" + term + "'</p>" + document.getElementById('lunrsearchresults').innerHTML;
-        //put results on the screen.
         var results = idx.search(term);
         if(results.length>0){
-            //console.log(idx.search(term));
-            //if results
             for (var i = 0; i < results.length; i++) {
-                // more statements
                 var ref = results[i]['ref'];
                 var url = documents[ref]['url'];
                 var title = documents[ref]['title'];
