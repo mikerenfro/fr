@@ -38,7 +38,7 @@ var documents = [
     {% endfor %}
 ];
 
-var idx = lunr(ref='id', fields=('title', 'body'), documents=documents);
+var idx = lunr(ref='id', fields=['title', 'body'], documents=documents);
 function lunr_search(term) {
     document.getElementById('lunrsearchresults').innerHTML = '<ul></ul>';
     if(term) {
