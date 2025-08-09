@@ -88,7 +88,7 @@ language: 'en'
 compress_html:
   clippings: all
   #comments: ["<!-- ", " -->"]
-  endings: all
+  #endings: all
   profile: false
   ignore:
     envs: [development]
